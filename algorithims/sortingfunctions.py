@@ -58,10 +58,11 @@ class Sortingalgorithms:
                 j = j + 1
         L[i + j :] = A[i:] + B[j:]
 
-    def python_sort(x: list[int]):
+    def python_sort(x: list[int]) -> list:
         sorted_list = sorted(x)
+        return sorted_list
 
-    def selectionsort(L):
+    def selectionsort(L) -> list:
         n = len(L)
         for i in range(n - 1):
             max_index = 0
@@ -69,6 +70,7 @@ class Sortingalgorithms:
                 if L[index] > L[max_index]:
                     max_index = index
             L[n - i - 1], L[max_index] = L[max_index], L[n - i - 1]
+        return L
 
     # Just putting these here just incase we want to do something with them
     def issorted(L):
