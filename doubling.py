@@ -1,12 +1,13 @@
 import time
 from typing import List, Tuple, Union
+from generate import generate_random_container_int
 
 def doubling(file_name: str, function_name: str, starting_size: int, runs: int) -> Tuple[List[float], List[int]]:
   """Run the doubling experiment on a given function in a specified file path."""
   execution_times = []
   # TODO: ADD READING IN OF FILE AND FUNCTION
   for run_number in range(runs):
-    generated_list = generate.generate_random_container(starting_size, 100)
+    generated_list = generate.generate_random_container_int(starting_size, 100)
     start_time = time.time()
     result = getattr(generated_list, file.function_name)()
     end_time = time.time()
