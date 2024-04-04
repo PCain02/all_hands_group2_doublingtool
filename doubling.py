@@ -1,6 +1,7 @@
 import time 
 import importlib.util
 from generate import generate_random_number, generate_random_container
+from typing import List, Tuple, Union
 
 def doubling(file_name: str, function_name: str, starting_size: int, runs: int) -> Tuple[List[float], List[int]]:
   """Run the doubling experiment on a given function in a specified file path."""
