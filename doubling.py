@@ -2,7 +2,7 @@ def doubling(file_name: str, function_name: str, starting_size: int, runs: int) 
   """Run the doubling experiment on a given function in a specified file path."""
   execution_times = []
   # TODO: ADD READING IN OF FILE AND FUNCTION
-  for run_number in a range(runs):
+  for run_number in range(runs):
     generated_list = generate.generate_random_container(TODO: CONTAINER INPUTS)
     start_time = time.time()
     result = getattr(generated_list, file.function_name)()
