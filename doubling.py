@@ -1,14 +1,37 @@
-def doubling(file_name: str, function_name: str, starting_size: int, runs: int) -> Tuple[List[float], List[int]]:
-  """Run the doubling experiment on a given function in a specified file path."""
-  execution_times = []
-  TODO: ADD READING IN OF FILE AND FUNCTION
-  for run_number in a range(runs):
-    generated_list = generate.generate_random_container(TODO: CONTAINER INPUTS)
-    start_time = time.time()
-    result = getattr(generated_list, file.function_name)()
-    end_time = time.time()
-    execution_time = end_time - start_time
-    print(f"Run {run_number+1} of {runs} for {operation} operation with singlylinked list using size {startsize} took {execution_time:.10f} seconds")
-    execution_times.append((run_number, startsize, execution_time))
-    startsize *= 2 
-  return execuion_times
+from algorithims import approach, functioncall, sortingfunctions
+import generate
+import time
+
+
+def doubling(
+    file_name: str,
+    function_name: str,
+    starting_size: int,
+    runs: int,
+    sorting_algorithm: str,
+):
+    """Run the doubling experiment on a given function in a specified file path."""
+    execution_times = []
+    # TODO: ADD READING IN OF FILE AND FUNCTION
+    for _ in range(runs):
+        # makes container
+        generated_list = generate.generate_random_container(starting_size)
+        # gets the list from the called function
+        list_result = functioncall.find_function_in_file(file_name, function_name)
+        # Checks the list for strings
+        string_check = functioncall.check_for_str(list_result)
+        start_time = time.time()
+        sorted_result = functioncall.sort_list(sorting_algorithm, string_check)
+        end_time = time.time()
+        execution_time = end_time - start_time
+        results = [
+            execution_time,
+            sorting_algorithm,
+        ]
+        print(
+            f"Run {_} of {runs} for {sorting_algorithm} operation with a list size of {starting_size} took {execution_time:.10f} seconds"
+        )
+        execution_times.append(results)
+        starting_size *= 2
+
+    return execution_times
