@@ -5,7 +5,7 @@
 import typer
 from rich.console import Console
 
-from algorithims import approach, benchmark
+from algorithims import approach, functioncall, sortingfunctions
 import doubling
 
 # create a Typer object to support the command-line interface

@@ -4,7 +4,7 @@ import time
 
 
 def doubling(
-    file_name: str,
+    file_path: str,
     function_name: str,
     starting_size: int,
     runs: int,
@@ -17,7 +17,7 @@ def doubling(
         # makes container
         generated_list = generate.generate_random_container(starting_size)
         # gets the list from the called function
-        list_result = functioncall.find_function_in_file(file_name, function_name)
+        list_result = functioncall.find_function_in_file(file_path, function_name)
         # Checks the list for strings
         string_check = functioncall.check_for_str(list_result)
         start_time = time.time()
