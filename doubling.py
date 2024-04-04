@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from algorithims import approach, functioncall, sortingfunctions
 import generate
 import time
@@ -35,3 +36,5 @@ def doubling(
         starting_size *= 2
 
     return execution_times
+=======
+>>>>>>> a8a2834dc9150d4ea9717f8ad96f6baea6fbf251
