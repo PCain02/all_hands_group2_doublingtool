@@ -8,7 +8,7 @@ def doubling(file_name: str, function_name: str, starting_size: int, runs: int) 
     result = getattr(generated_list, file.function_name)()
     end_time = time.time()
     execution_time = end_time - start_time
-    print(f"Run {run_number+1} of {runs} for {operation} operation with list using size {startsize} took {execution_time:.10f} seconds")
-    execution_times.append((run_number, startsize, execution_time))
-    startsize *= 2 
-  return execuion_times
+    print(f"Run {run_number+1} of {runs} for {operation} operation with list using size {starting_size} took {execution_time:.10f} seconds")
+    execution_times.append((run_number, starting_size, execution_time))
+    starting_size *= 2 
+  return execution_times
