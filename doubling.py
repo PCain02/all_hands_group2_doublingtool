@@ -1,3 +1,4 @@
+
 def doubling(file_name: str, function_name: str, starting_size: int, runs: int) -> Tuple[List[float], List[int]]:
   """Run the doubling experiment on a given function in a specified file path."""
   execution_times = []
