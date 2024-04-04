@@ -2,12 +2,14 @@ from sortingfunctions import Sortingalgorithms
 from approach import Sortingapproach
 from typing import List
 import importlib.util
+import os
+
 
 # I currently have the
 # takes sorting function and list
 
 
-def sort_list(sorting_algo, input_list: List[int]) -> List[int]:
+def sort_list(sorting_algo: str, input_list: List[int]) -> List[int]:
     """Sort the input list using the specified sorting approach."""
     if sorting_algo == Sortingapproach.bubblesort:
         return Sortingalgorithms.bubblesort(input_list)
@@ -27,13 +29,18 @@ def sort_list(sorting_algo, input_list: List[int]) -> List[int]:
 
 def find_function_in_file(file_path, function_name):
     try:
-        with open(file_path, "r") as file:
-            for line in file:
-                if function_name in line:
-                    if line.strip().startswith("def " + function_name + "("):
-                        return function_name
-        print("Function '{}' not found in file '{}'".format(function_name, file_path))
-        return None
+        if os.path.exists(file_path):
+            with open(file_path, "r") as file:
+                for line in file:
+                    if function_name in line:
+                        if line.strip().startswith("def " + function_name + "("):
+                            return function_name
+            print(
+                "Function '{}' not found in file '{}'".format(function_name, file_path)
+            )
+            return None
+        else:
+            return print("Not a valid file")
 
     except FileNotFoundError:
         print(f"Error: File '{file_path}' not found.")
@@ -41,6 +48,14 @@ def find_function_in_file(file_path, function_name):
     except Exception as e:
         print(f"Error: {e}")
         return None
+
+
+def check_for_str(input_list: list):
+    for i in input_list:
+        if isinstance(i, str):
+            return print("The function has strings in it. This tool only takes int")
+        else:
+            return input_list
 
 
 # Example usage:
