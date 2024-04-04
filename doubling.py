@@ -9,7 +9,7 @@ def doubling(file_name: str, function_name: str, starting_size: int, runs: int) 
   for run_number in range(runs):
     generated_list = generate_random_container(starting_size, 100)
     start_time = time.time()
-    result = getattr(generated_list, file.function_name)()
+    result = getattr(generated_list, generate_random_number)()
     end_time = time.time()
     execution_time = end_time - start_time
     print(f"Run {run_number+1} of {runs} for {operation} operation with singlylinked list using size {starting_size} took {execution_time:.10f} seconds")
