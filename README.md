@@ -7,7 +7,7 @@ Link to Doc https://docs.google.com/document/d/11gcGiVxx0g4t9ZRkzyVi58d2r75RY3IW
 
 ## Motivation 
 
-TODO:
+The tool implemented here is meant to create a simple way to test the worst-case time complexity of a given sorting algorithm. The tests can be customized by starting with the size of the list and the number of runs.
 
 ## Tool Breakdown
 
