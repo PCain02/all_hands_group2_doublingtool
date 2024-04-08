@@ -58,6 +58,11 @@ def check_for_str(input_list: list):
             return input_list
 
 
+def example1():
+    nums = [56, 32, 2, 14, 35, 7, 9, 0, 1, 4]
+    return nums
+
+
 # Example usage:
 file_path = "testl.py"
 function_name = "make_list"

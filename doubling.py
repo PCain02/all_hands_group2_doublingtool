@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 from algorithims import approach, functioncall, sortingfunctions
 import generate
 import time
 
 
+# file_path: str,
+# function_name: str,
 def doubling(
-    file_path: str,
-    function_name: str,
     starting_size: int,
     runs: int,
     sorting_algorithm: str,
@@ -18,11 +17,12 @@ def doubling(
         # makes container
         generated_list = generate.generate_random_container(starting_size)
         # gets the list from the called function
-        list_result = functioncall.find_function_in_file(file_path, function_name)
+        # list_result = functioncall.find_function_in_file(file_path, function_name)
         # Checks the list for strings
-        string_check = functioncall.check_for_str(list_result)
+        # string_check = functioncall.check_for_str(list_result)
         start_time = time.time()
-        sorted_result = functioncall.sort_list(sorting_algorithm, string_check)
+        # takes a sorting algo and a list and sorts it.
+        sorted_result = functioncall.sort_list(sorting_algorithm, generated_list)
         end_time = time.time()
         execution_time = end_time - start_time
         results = [
@@ -36,5 +36,3 @@ def doubling(
         starting_size *= 2
 
     return execution_times
-=======
->>>>>>> a8a2834dc9150d4ea9717f8ad96f6baea6fbf251
