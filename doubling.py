@@ -15,7 +15,7 @@ def doubling(
     # TODO: ADD READING IN OF FILE AND FUNCTION
     for _ in range(runs):
         # makes container
-        generated_list = generate.generate_random_container(starting_size)
+        generated_list = generate.generate_random_container_int(starting_size, 1000)
         # gets the list from the called function
         # list_result = functioncall.find_function_in_file(file_path, function_name)
         # Checks the list for strings
