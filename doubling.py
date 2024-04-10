@@ -36,3 +36,23 @@ def doubling(
         starting_size *= 2
 
     return execution_times
+
+def double_ratio(execution_times):
+    """Calculate the doubling ratio from the last two execution times in a list"""
+    # Ensure there are at least two execution times to calculate a ratio
+    if len(execution_times) < 2:
+        print("Not enough data to calculate doubling ratios.")
+        return None
+    # Calculate the doubling ratio from the last two execution times and round it
+    n = round(execution_times[-1] / execution_times[-2])
+    # Determine the growth pattern based on the rounded doubling ratio
+    if n == 1:
+        print("Constant")
+        return 1
+    elif n == 2:
+        print("Linear")
+        return 2
+    else:
+        print("Other growth pattern")
+        return n
+
