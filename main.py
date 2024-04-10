@@ -34,7 +34,6 @@ def main(
     typer.echo(f"Sorting algorithm: {sorting_algorithm}")
     # perform the benchmarking operation
     benchmark_data = doubling.doubling(starting_size, runs, sorting_algorithm)
-    console.print(benchmark_data)
     # display the results concerning the minimum execution time
 
 
