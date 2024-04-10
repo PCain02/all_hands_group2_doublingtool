@@ -1,5 +1,5 @@
-from sortingfunctions import Sortingalgorithms
-from approach import Sortingapproach
+from algorithims import sortingfunctions
+from algorithims import approach
 from typing import List
 import importlib.util
 import os
@@ -11,18 +11,18 @@ import os
 
 def sort_list(sorting_algo: str, input_list: List[int]) -> List[int]:
     """Sort the input list using the specified sorting approach."""
-    if sorting_algo == Sortingapproach.bubblesort:
-        return Sortingalgorithms.bubblesort(input_list)
-    elif sorting_algo == Sortingapproach.bubblesort_stopearly:
-        return Sortingalgorithms.bubblesort_stopearly(input_list)
-    elif sorting_algo == Sortingapproach.insertionsort:
-        return Sortingalgorithms.insertionsort(input_list)
-    elif sorting_algo == Sortingapproach.mergesort:
-        return Sortingalgorithms.mergesort(input_list)
-    elif sorting_algo == Sortingapproach.pythonsort:
-        return Sortingalgorithms.python_sort(input_list)
-    elif sorting_algo == Sortingapproach.selectionsort:
-        return Sortingalgorithms.selectionsort(input_list)
+    if sorting_algo == approach.Sortingapproach.bubblesort:
+        return sortingfunctions.Sortingalgorithms.bubblesort(input_list)
+    elif sorting_algo == approach.Sortingapproach.bubblesort_stopearly:
+        return sortingfunctions.Sortingalgorithms.bubblesort_stopearly(input_list)
+    elif sorting_algo == approach.Sortingapproach.insertionsort:
+        return sortingfunctions.Sortingalgorithms.insertionsort(input_list)
+    elif sorting_algo == approach.Sortingapproach.mergesort:
+        return sortingfunctions.Sortingalgorithms.mergesort(input_list)
+    elif sorting_algo == approach.Sortingapproach.pythonsort:
+        return sortingfunctions.Sortingalgorithms.python_sort(input_list)
+    elif sorting_algo == approach.Sortingapproach.selectionsort:
+        return sortingfunctions.Sortingalgorithms.selectionsort(input_list)
     else:
         raise ValueError("Invalid sorting approach")
 
@@ -64,18 +64,17 @@ def example1():
 
 
 # Example usage:
-file_path = "testl.py"
-function_name = "make_list"
-found_function_name = find_function_in_file(file_path, function_name)
-if found_function_name:
-    print(f"Function '{function_name}' found in file '{file_path}'.")
+# file_path = "testl.py"
+# function_name = "make_list"
+# found_function_name = find_function_in_file(file_path, function_name)
+# if found_function_name:
+#   print(f"Function '{function_name}' found in file '{file_path}'.")
 
-    try:
-        module = importlib.import_module(file_path[:-3].replace("\\", "."))
-        found_function = getattr(module, found_function_name)
-        result = found_function()
+#  try:
+#     module = importlib.import_module(file_path[:-3].replace("\\", "."))
+#    found_function = getattr(module, found_function_name)
+#   result = found_function()
 
-    except Exception as e:
-        print(f"Error calling the function: {e}")
-else:
-    print(f"Function '{function_name}' not found in file '{file_path}'.")
+##   print(f"Error calling the function: {e}")
+# else:
+# print(f"Function '{function_name}' not found in file '{file_path}'.")
