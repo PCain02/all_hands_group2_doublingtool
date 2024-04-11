@@ -82,10 +82,6 @@ Use the command line:
 
 `poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm selection_sort`
 
-### Operations
-
-TODO:
-
 ### Output
 
 ```text
