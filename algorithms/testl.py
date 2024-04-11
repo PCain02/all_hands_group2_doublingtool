@@ -1,4 +1,4 @@
-from sortingfunctions import Sortingalgorithms
+from doubling.sortingfunctions import Sortingalgorithms
 
 
 # The function correctly sorts a list of integers in ascending order using the specified sorting approach.
