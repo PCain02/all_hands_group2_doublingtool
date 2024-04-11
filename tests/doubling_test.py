@@ -1,7 +1,7 @@
 import time
 import pytest
 from typing import List, Tuple
-from doubling import doubling
+from doubling.benchmark import doublingfunction
 
 def test_doubling():
     file_name = __file__
@@ -12,7 +12,7 @@ def test_doubling():
     expected_sizes = [starting_size * (2 ** i) for i in range(runs)]
     expected_times = [0.01] * runs
 
-    actual_times, actual_sizes = doubling(file_name, function_name, starting_size, runs)
+    actual_times, actual_sizes = doublingfunction(file_name, function_name, starting_size, runs)
 
     assert expected_sizes == actual_sizes
     for expected, actual in zip(expected_times, actual_times):

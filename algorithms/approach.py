@@ -10,3 +10,6 @@ class Sortingapproach(str, Enum):
     mergesort = "mergesort"
     pythonsort = "pythonsort"
     selectionsort = "selectionsort"
+
+    def __str__(self):
+        return self.value

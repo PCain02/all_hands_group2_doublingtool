@@ -1,5 +1,5 @@
 """Test Suite for the generate module."""
-
+from doubling import generate
 from typing import List
 
 def test_generate_random_number():
@@ -15,8 +15,8 @@ def test_generate_random_number():
 
 def test_generate_random_list():
     """Test that the generate_random_list function correctly generates a list based on specifications"""
-    empty_list = generate.generate_random_list(0, 0)
-    list_result = generate.generate_random_list(2, 100)
+    empty_list = generate.generate_random_container_int(0, 0)
+    list_result = generate.generate_random_container_int(2, 100)
     assert list_result is not None
     assert empty_list is not None
     assert isinstance(list_result, list)
