@@ -6,7 +6,7 @@ from enum import Enum
 
 # Benchmark values constant
 @dataclass(frozen=True)
-class DoublingBenchmarkValues:
+class BenchmarkValues:
     """Define the BenchmarkValues dataclass for constant(s)."""
 
     num_runs: int
@@ -17,10 +17,10 @@ class DoublingBenchmarkValues:
     min_value: int
 
 
-doubling_benchmark_values = DoublingBenchmarkValues(
+benchmark_values = BenchmarkValues(
     num_runs=10,
     start_size=1000,
-    max_size=1000000,
+    max_size=10000,
     min_size=100,
     max_value=10000,
     min_value=0,
