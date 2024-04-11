@@ -78,7 +78,9 @@ This file has contains the code for the different sorting algorithms, such as `b
 
 ### Input
 
-Use the command line TODO:
+Use the command line:
+
+`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm selection_sort`
 
 ### Operations
 
@@ -86,4 +88,15 @@ TODO:
 
 ### Output
 
-TODO:
+```text
+Starting size: 1000
+Number of runs: 5
+File Path: sortingfunctions.py
+Sorting algorithm: selection_sort
+Run 1 of 5 for selection_sort operation with a list size of 1000 took 0.0121803284 seconds
+Run 2 of 5 for selection_sort operation with a list size of 2000 took 0.0508677959 seconds
+Run 3 of 5 for selection_sort operation with a list size of 4000 took 0.1876626015 seconds
+Run 4 of 5 for selection_sort operation with a list size of 8000 took 0.7470493317 seconds
+Run 5 of 5 for selection_sort operation with a list size of 16000 took 3.0009748936 seconds
+Other growth pattern
+```

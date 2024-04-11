@@ -9,7 +9,6 @@ from enum import Enum
 class DoublingBenchmarkValues:
     """Define the BenchmarkValues dataclass for constant(s)."""
 
-    
     num_runs: int
     start_size: int
     max_size: int
