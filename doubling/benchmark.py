@@ -2,7 +2,7 @@ import generate
 #from constants import DoublingBenchmarkValues
 #from doubling import constants
 import time
-from typing import List
+from typing import List, Tuple, Callable, Any
 
 
 #doubling_benchmark_values = constants.DoublingBenchmarkValues
@@ -10,7 +10,8 @@ from typing import List
 # file_path: str,
 # function_name: str,
 
-def read_in_function_from_file(file_path: str, function_name: str):
+def read_in_function_from_file(file_path: str, function_name: str) -> Callable:
+    """Reads and returns a function from a specified Python source file."""
     with open(file_path, 'r') as file:
         code = compile(file.read(), file_path, 'exec')
         exec(code, globals())
@@ -19,10 +20,10 @@ def read_in_function_from_file(file_path: str, function_name: str):
         if function_name in mod:
             return mod[function_name]
         else:
-            raise AttributeError(f"Function not found!")
+            raise AttributeError(f"Function not found: {function_name}!")
 
         
-def double_ratio(execution_times: List[float]) -> None: 
+def double_ratio(execution_times: List[float]) -> float: 
     """Calculate the doubling ratio from the last two execution times in a list"""
     # Ensure there are at least two execution times to calculate a ratio
     if len(execution_times) < 2:
@@ -46,8 +47,13 @@ def doublingfunction(
     runs: int,
     file_path: str,
     sorting_algorithm: str,
-):
-    """Run the doubling experiment on a given function in a specified file path."""
+) -> List[Tuple[float, str]]:
+    
+    """
+    Executes a sorting algorithm function specified by name, imported from a given file,
+    over increasingly large random lists of integers, doubling in size with each run,
+    to measure performance and compute time ratios.
+    """
     execution_times = []
     results_list = []
     selected_function = read_in_function_from_file(file_path, sorting_algorithm)
