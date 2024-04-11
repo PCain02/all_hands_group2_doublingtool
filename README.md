@@ -76,16 +76,13 @@ This file has contains the code for the different sorting algorithms, such as `b
 
 6. **python_sort**: This algorithm uses Python's built-in `sorted()` function to sort the input list.
 
-### Input
+### Input & Output
 
-Use the command line:
+#### Bubble Sort input:
 
-`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm selection_sort`
-
-### Output
+`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm bubble_sort`
 
 ```text
-Starting size: 1000
 Number of runs: 5
 File Path: sortingfunctions.py
 Sorting algorithm: selection_sort
@@ -95,4 +92,90 @@ Run 3 of 5 for selection_sort operation with a list size of 4000 took 0.18766260
 Run 4 of 5 for selection_sort operation with a list size of 8000 took 0.7470493317 seconds
 Run 5 of 5 for selection_sort operation with a list size of 16000 took 3.0009748936 seconds
 Other growth pattern
+```
+
+#### Selection Sort input:
+
+`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm selection_sort`
+
+```text
+Starting size: 1000
+Number of runs: 5
+File Path: sortingfunctions.py
+Sorting algorithm: selection_sort
+Run 1 of 5 for selection_sort operation with a list size of 1000 took 0.0140030384 seconds
+Run 2 of 5 for selection_sort operation with a list size of 2000 took 0.0484406948 seconds
+Run 3 of 5 for selection_sort operation with a list size of 4000 took 0.1885452271 seconds
+Run 4 of 5 for selection_sort operation with a list size of 8000 took 0.7483632565 seconds
+Run 5 of 5 for selection_sort operation with a list size of 16000 took 2.9773070812 seconds
+Other growth pattern
+```
+
+#### Insertion Sort input:
+
+`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm insertion_sort`
+
+```
+Starting size: 1000
+Number of runs: 5
+File Path: sortingfunctions.py
+Sorting algorithm: insertion_sort
+Run 1 of 5 for insertion_sort operation with a list size of 1000 took 0.0130105019 seconds
+Run 2 of 5 for insertion_sort operation with a list size of 2000 took 0.0498890877 seconds
+Run 3 of 5 for insertion_sort operation with a list size of 4000 took 0.1984264851 seconds
+Run 4 of 5 for insertion_sort operation with a list size of 8000 took 0.7884969711 seconds
+Run 5 of 5 for insertion_sort operation with a list size of 16000 took 3.2496039867 seconds
+Other growth pattern
+```
+
+#### Merge Sort input:
+
+`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm merge_sort`
+
+```
+Starting size: 1000
+Number of runs: 5
+File Path: sortingfunctions.py
+Sorting algorithm: merge_sort
+Run 1 of 5 for merge_sort operation with a list size of 1000 took 0.0010540485 seconds
+Run 2 of 5 for merge_sort operation with a list size of 2000 took 0.0020580292 seconds
+Run 3 of 5 for merge_sort operation with a list size of 4000 took 0.0054259300 seconds
+Run 4 of 5 for merge_sort operation with a list size of 8000 took 0.0107645988 seconds
+Run 5 of 5 for merge_sort operation with a list size of 16000 took 0.0219638348 seconds
+Linear
+```
+
+#### Quick Sort input:
+
+`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm quick_sort`
+
+```text
+Starting size: 1000
+Number of runs: 5
+File Path: sortingfunctions.py
+Sorting algorithm: quick_sort
+Run 1 of 5 for quick_sort operation with a list size of 1000 took 0.0004308224 seconds
+Run 2 of 5 for quick_sort operation with a list size of 2000 took 0.0007622242 seconds
+Run 3 of 5 for quick_sort operation with a list size of 4000 took 0.0014250278 seconds
+Run 4 of 5 for quick_sort operation with a list size of 8000 took 0.0030248165 seconds
+Run 5 of 5 for quick_sort operation with a list size of 16000 took 0.0064024925 seconds
+Linear
+```
+
+#### Python Sort input:
+
+
+`poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm python_sort`
+
+```text
+Starting size: 1000
+Number of runs: 5
+File Path: sortingfunctions.py
+Sorting algorithm: python_sort
+Run 1 of 5 for python_sort operation with a list size of 1000 took 0.0000572205 seconds
+Run 2 of 5 for python_sort operation with a list size of 2000 took 0.0001194477 seconds
+Run 3 of 5 for python_sort operation with a list size of 4000 took 0.0002787113 seconds
+Run 4 of 5 for python_sort operation with a list size of 8000 took 0.0004899502 seconds
+Run 5 of 5 for python_sort operation with a list size of 16000 took 0.0026359558 seconds
+Linear
 ```
