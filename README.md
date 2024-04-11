@@ -41,38 +41,29 @@ This file contains multiple functions that aid in random list generation. `gener
 
 `generate_random_container_int` creates the random list with a given size utilizing the `generate_random_number` function to fill the list with as many integers as there are in the size. `generate_random_container_str` works the same except it replaces the random integers with random letters.
 
-##### `doubling.py`
+##### `benchmark.py`
 
 TODO:
 
 ##### `generate_test.py`
 
-TODO:
+This file contains the test cases for the `generate.py` file. It test out all the functions inside the module, where it test the `generate_random_number()` if the random number is within or over the maximum. Another function that is being tested is the `generate_random_container_int` function that check whether the function correctly generates a list based on the given specifications.
 
 ##### `doubling_test.py`
 
-TODO:
+This file contains to be the unit test for a function called `doublingfunction` within a module named `doubling.benchmark`. It test out whether the doubling function is working correctly based on the given specifications, which is the `file_name`, `function_name`, `starting_size`, and `runs`. This function is testing the doubling each iteration of the list.
 
 ##### `sorting_test.py`
 
 TODO:
 
-##### `approach.py`
-
-TODO:
-
-##### `functioncall.py`
+##### `constants.py`
 
 TODO:
 
 ##### `sortingfunctions.py`
 
 TODO:
-
-##### `testl.py`
-
-TODO:
-
 
 ### Input
 
