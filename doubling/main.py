@@ -5,10 +5,8 @@
 import typer
 from rich.console import Console
 
-from algorithims import approach
-from algorithims import functioncall
-from algorithims import sortingfunctions
-import doubling
+from doubling import sortingfunctions
+from doubling import benchmark
 
 # create a Typer object to support the command-line interface
 cli = typer.Typer()
@@ -22,7 +20,8 @@ console = Console()
 def main(
     starting_size: int = typer.Option(1000),
     runs: int = typer.Option(10),
-    sorting_algorithm: approach.Sortingapproach = typer.Option(...),
+    file_path: str = typer.Option(..., "--file_path", "-f", help="Path to the file containing sorting functions"),
+    sorting_algorithm: str = typer.Option("bubblesort"),
 ):
     """Function for main"""
     """Evaluate the performance of list operations."""
@@ -31,9 +30,10 @@ def main(
     # typer.echo(f"Function name: {function_name}")
     typer.echo(f"Starting size: {starting_size}")
     typer.echo(f"Number of runs: {runs}")
+    typer.echo(f"File Path: {file_path}")
     typer.echo(f"Sorting algorithm: {sorting_algorithm}")
     # perform the benchmarking operation
-    benchmark_data = doubling.doubling(starting_size, runs, sorting_algorithm)
+    benchmark_data = benchmark.doublingfunction(starting_size, runs, file_path, sorting_algorithm)
     # display the results concerning the minimum execution time
 
 
