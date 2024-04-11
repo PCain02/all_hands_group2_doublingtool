@@ -31,14 +31,12 @@ def read_in_function_from_file(file_path: str, function_name: str) -> Callable:
 def double_ratio(execution_times: List[float]) -> float:
     """Calculate the doubling ratio from the last two execution times in a list"""
     # Ensure there are at least two execution times to calculate a ratio
+    print()
     print("Behold the worst-case time complexity analysis!")
     if float(execution_times[-1]) == 0.0 or float(execution_times[-2]) == 0.0:
         print("We can not divide by zero! Results are inconclusive!")
         return 0.0
     if len(execution_times) > 2:
-        print(
-            "We will try our best with the info we do have though! However we reccommend you rerun for more accurate results."
-        )
         n = float(execution_times[-1]) / float(execution_times[-2])
         n_rounded = round(
             float(execution_times[-1]) / float(execution_times[-2])
@@ -78,6 +76,8 @@ def double_ratio(execution_times: List[float]) -> float:
             )
             return n
     # Calculate the doubling ratio from the last two execution times and round it
+    else: 
+        print("You did not have enough runs to come up with a result! Try running again with more runs.")
     print(
         "If these aren't the expected results, try increasing the input sizes."
     )
@@ -120,7 +120,7 @@ def doublingfunction(
             sorting_algorithm,
         ]
         print(
-            f"Run {_} of {runs} for {sorting_algorithm} operation with a list size of {starting_size} took {execution_time:.10f} seconds"
+            f"Run {_:2} of {runs:2} for {sorting_algorithm:15} operation with a list size of {starting_size:10} took {execution_time:.10f} seconds"
         )
         results_list.append(results)
         starting_size *= 2
