@@ -15,18 +15,21 @@ The tool implemented here is meant to create a simple way to test the worst-case
 
 #### Files Overview
  
- Main Directory 
+Main Directory
 - `main.py`
 - `generate.py`
 - `benchmark.py`
+- `constants.py`
+- `sortingfunctions.py`
+
+Test Folder
+
 - `generate_test.py`
 - `doubling_test.py`
 - `sorting_test.py`
 
 Algorithms Folder
 - `approach.py`
-- `functioncall.py`
-- `sortingfunctions.py`
 - `testl.py`
 
 #### Files in Detail
@@ -57,13 +60,21 @@ This file contains to be the unit test for a function called `doublingfunction` 
 
 This file ensures that the sorting function is implemented correctly. The function assumes that the sorting algorithms are defined elsewhere and are correctly imported at the start of the script with `from doubling import sortingfunctions`.
 
-##### `constants.py`
-
-TODO:
-
 ##### `sortingfunctions.py`
 
-TODO:
+This file has contains the code for the different sorting algorithms, such as `bubble_sort`, `selection_sort`, `insertion_sort`, `merge_sort`, `quick_sort` and `python_sort`.
+
+1. **bubble_sort**: This algorithm iterates through the list multiple times and swap them if they are in the wrong order. It would not stop until the list is sorted.
+
+2. **selection_sort**: This algorithm divides the input list into halves: the sorted sublist and the unsorted sublist. Each iteration of the list selects the smallest element from the unsorted sublist and swap it with the leftmost unsorted element, expanding the sorted sublist.
+
+3. **insertion_sort**: This algorithm builds the final sorted list by iterating one item at a time. It is taking the next element from the unsorted position and inserting it to the correct position in the sorted part.
+
+4. **merge_sort**: This function implements the merge sort algorithm. It recursively divides the input list into halves until each sublist contains only one element. Then, it merges the sublists in a sorted manner, combining them into larger sorted sublists until the entire list is sorted.
+
+5. **quick_sort**: This function implements the quick sort algorithm. It selects a pivot element from the list and partitions the other elements into two sublists according to whether they are less than or greater than the pivot. It then recursively sorts the sublists. This algorithm selects an pivot element from the list and separates the other elements to 2 sublists based on whether they are less than or greater than the pivot.
+
+6. **python_sort**: This algorithm uses Python's built-in `sorted()` function to sort the input list.
 
 ### Input
 
