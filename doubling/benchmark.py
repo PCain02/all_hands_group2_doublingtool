@@ -40,8 +40,7 @@ def double_ratio(execution_times: List[float]) -> None:
     else:
         print("Other growth pattern")
         return n
-    return None
-
+        
 def doublingfunction(
     starting_size: int,
     runs: int,
