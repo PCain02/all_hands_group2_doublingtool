@@ -55,7 +55,7 @@ This file contains to be the unit test for a function called `doublingfunction` 
 
 ##### `sorting_test.py`
 
-TODO:
+This file ensures that the sorting function is implemented correctly. The function assumes that the sorting algorithms are defined elsewhere and are correctly imported at the start of the script with `from doubling import sortingfunctions`.
 
 ##### `constants.py`
 
