@@ -22,8 +22,7 @@ def main(
     runs: int = typer.Option(10),
     file_path: str = typer.Option(..., "--file_path", "-f", help="Path to the file containing sorting functions"),
     sorting_algorithm: str = typer.Option("bubblesort"),
-):
-    """Function for main"""
+) -> None:
     """Evaluate the performance of list operations."""
     # display details about the configuration of the benchmarking tool
     # typer.echo(f"File path: {file_path}")
