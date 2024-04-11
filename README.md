@@ -18,7 +18,7 @@ The tool implemented here is meant to create a simple way to test the worst-case
  Main Directory 
 - `main.py`
 - `generate.py`
-- `doubling.py`
+- `benchmark.py`
 - `generate_test.py`
 - `doubling_test.py`
 - `sorting_test.py`
@@ -43,7 +43,7 @@ This file contains multiple functions that aid in random list generation. `gener
 
 ##### `benchmark.py`
 
-TODO:
+The benchmark file contains all the required functions that we use to the doubling experiment. The `read_in_function_from_file` function is responsible for dynamically importing function(s) from a file given the path of the file and its name. It also makes sure that the files exists. Then we have the `double_ratio` function which does the calculation of the doubling ratio based on the last two execution times in a list. Using a simple if else statement it determines the growth pattern, if it is linear, constant or it is another growth pattern. Lastly we have the `doublingfunction` function which is the "engine" of the file. It performs a performance analysis of a sorting algorithm.
 
 ##### `generate_test.py`
 
