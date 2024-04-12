@@ -45,6 +45,7 @@ def double_ratio(execution_times: List[float]) -> float:
             print(
                 f"The ratio was {n} which rounds to {n_rounded} which means that the worst-case time complexity is Constant or better!"
             )
+            return n
         elif 1 < n < 2 and n_rounded != 2:
             print(
                 f"The ratio was {n} which rounds to {n_rounded} which means that the worst-case time complexity is likely logarithmic!"
