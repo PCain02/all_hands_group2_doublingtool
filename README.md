@@ -186,4 +186,4 @@ Linear
 
 ### Conclusion
 
-
+In conclusion, for sorting large lists, it's more efficient to implement sorting algorithms with a time complexity of O(n log n), just like merge sort and quick sort, or just using the sorting function that is built in Python programming language. Algorithms with a time complexity of O(n^2), like Selection Sort and Insertion Sort, are less efficient for larger list sizes.
