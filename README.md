@@ -185,7 +185,7 @@ The ratio was 5.38004842125 which rounds to 5. This is indicative of some other 
 
 ### Data Tables and Graphs
 
-![image](https://github.com/PCain02/all_hands_group2_doublingtool/assets/82393336/994dea93-24b6-4316-b7d0-64a1bb8ec7cb)
+![image](https://github.com/PCain02/all_hands_group2_doublingtool/assets/82393336/2f5a08b7-2e62-40e6-944e-4f726b6632ce)
 
 ### Conclusion
 
