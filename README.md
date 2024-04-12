@@ -152,15 +152,14 @@ Starting size: 1000
 Number of runs: 5
 File Path: sortingfunctions.py
 Sorting algorithm: quick_sort
-Run  1 of  5 for quick_sort operation with a list size of 1000 took 0.0000000000 seconds   
-Run  2 of  5 for quick_sort operation with a list size of 2000 took 0.0019052029 seconds   
-Run  3 of  5 for quick_sort operation with a list size of 4000 took 0.0020380020 seconds
-Run  4 of  5 for quick_sort operation with a list size of 8000 took 0.0094642639 seconds
-Run  5 of  5 for quick_sort operation with a list size of 16000 took 0.0125412941 seconds
+Run  1 of  5 for quick_sort operation with a list size of 1000 took 0.0009956360 seconds   
+Run  2 of  5 for quick_sort operation with a list size of 2000 took 0.0020067692 seconds   
+Run  3 of  5 for quick_sort operation with a list size of 4000 took 0.0030019283 seconds   
+Run  4 of  5 for quick_sort operation with a list size of 8000 took 0.0070052147 seconds
+Run  5 of  5 for quick_sort operation with a list size of 16000 took 0.0100560188 seconds
 
 Behold the worst-case time complexity analysis!
-The ratio was 1.3251209189842805 which rounds to 1 which means that the worst-case time complexity is 
-likely logarithmic!
+The ratio was 1.435504730787557 which rounds to 1 which means that the worst-case time complexity is likely logarithmic!
 ```
 
 #### Python Sort input:
