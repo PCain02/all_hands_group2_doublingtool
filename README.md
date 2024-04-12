@@ -180,6 +180,10 @@ Run 5 of 5 for python_sort operation with a list size of 16000 took 0.0026359558
 Linear
 ```
 
-## Data Tables and Graphs
+### Data Tables and Graphs
 
 ![image](https://github.com/PCain02/all_hands_group2_doublingtool/assets/82393336/994dea93-24b6-4316-b7d0-64a1bb8ec7cb)
+
+### Conclusion
+
+
