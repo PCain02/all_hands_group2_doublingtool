@@ -1,16 +1,9 @@
 from doubling import generate
 
-# from constants import DoublingBenchmarkValues
-# from doubling import constants
 import time
 from typing import List, Tuple, Callable, Any
 from doubling import constants
 
-
-# doubling_benchmark_values = constants.DoublingBenchmarkValues
-
-# file_path: str,
-# function_name: str,
 
 benchmarkvalues = constants.benchmark_values
 
@@ -106,10 +99,7 @@ def doublingfunction(
         generated_list = generate.generate_random_container_int(
             starting_size, benchmarkvalues.min_size
         )
-        # gets the list from the called function
-        # list_result = functioncall.find_function_in_file(file_path, function_name)
-        # Checks the list for strings
-        # string_check = functioncall.check_for_str(list_result)
+        # takes a sorting algorithm and a list and sorts it.
         start_time = time.time()
         # takes a sorting algo and a list and sorts it.
         sorted_result = selected_function(generated_list)

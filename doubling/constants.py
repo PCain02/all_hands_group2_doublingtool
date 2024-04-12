@@ -1,7 +1,6 @@
 """Define constants with dataclasses."""
 
 from dataclasses import dataclass
-from enum import Enum
 
 
 # Benchmark values constant
