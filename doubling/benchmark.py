@@ -43,7 +43,7 @@ def double_ratio(execution_times: List[float]) -> float:
         )
         if n < 1:
             print(
-                f"The ratio was {n} which rounds to {n_rounded} which means that the worst-case time complexity is O(1) or Constant or better!"
+                f"The ratio was {n} which rounds to {n_rounded} which means that the worst-case time complexity is Constant or better!"
             )
         elif 1 < n < 2 and n_rounded != 2:
             print(
@@ -60,12 +60,12 @@ def double_ratio(execution_times: List[float]) -> float:
                 f"The ratio was {n} which rounds to {n_rounded} which means that the worst-case time complexity is likely linear!"
             )
             return n
-        elif 4 > n > 2 and n_rounded != 2:
+        elif 4 > n > 2 and n_rounded != 4:
             print(
                 f"The ratio was {n} which rounds to {n_rounded} which means that the worst-case time complexity is likely linearithmic or worse!"
             )
             return n
-        elif n > 4:
+        elif n > 4 or n_rounded == 4:
             print(
                 f"The ratio was {n} which rounds to {n_rounded} which means that the worst-case time complexity is likely quadratic or worse!"
             )

@@ -67,6 +67,7 @@ This file has contains the code for the different sorting algorithms, such as `b
 
 ### Input & Output
 
+
 #### Bubble Sort input:
 
 `poetry run doubling --starting-size 1000 --runs 5 --file_path sortingfunctions.py --sorting-algorithm bubble_sort`
@@ -80,7 +81,9 @@ Run 2 of 5 for selection_sort operation with a list size of 2000 took 0.05086779
 Run 3 of 5 for selection_sort operation with a list size of 4000 took 0.1876626015 seconds
 Run 4 of 5 for selection_sort operation with a list size of 8000 took 0.7470493317 seconds
 Run 5 of 5 for selection_sort operation with a list size of 16000 took 3.0009748936 seconds
-Other growth pattern
+
+Behold the worst-case time complexity analysis!
+The ratio was 4.01710404689 which rounds to 4 which means that the worst-case time complexity is likely quadratic or worse!
 ```
 
 #### Selection Sort input:
@@ -97,7 +100,9 @@ Run 2 of 5 for selection_sort operation with a list size of 2000 took 0.04844069
 Run 3 of 5 for selection_sort operation with a list size of 4000 took 0.1885452271 seconds
 Run 4 of 5 for selection_sort operation with a list size of 8000 took 0.7483632565 seconds
 Run 5 of 5 for selection_sort operation with a list size of 16000 took 2.9773070812 seconds
-Other growth pattern
+
+Behold the worst-case time complexity analysis!
+The ratio was 3.97842498992 which rounds to 4 which means that the worst-case time complexity is likely quadratic or worse!
 ```
 
 #### Insertion Sort input:
@@ -114,7 +119,9 @@ Run 2 of 5 for insertion_sort operation with a list size of 2000 took 0.04988908
 Run 3 of 5 for insertion_sort operation with a list size of 4000 took 0.1984264851 seconds
 Run 4 of 5 for insertion_sort operation with a list size of 8000 took 0.7884969711 seconds
 Run 5 of 5 for insertion_sort operation with a list size of 16000 took 3.2496039867 seconds
-Other growth pattern
+
+Behold the worst-case time complexity analysis!
+The ratio was 4.12126375345 which rounds to 4 which means that the worst-case time complexity is likely quadratic or worse!
 ```
 
 #### Merge Sort input:
@@ -126,12 +133,14 @@ Starting size: 1000
 Number of runs: 5
 File Path: sortingfunctions.py
 Sorting algorithm: merge_sort
-Run 1 of 5 for merge_sort operation with a list size of 1000 took 0.0010540485 seconds
-Run 2 of 5 for merge_sort operation with a list size of 2000 took 0.0020580292 seconds
-Run 3 of 5 for merge_sort operation with a list size of 4000 took 0.0054259300 seconds
-Run 4 of 5 for merge_sort operation with a list size of 8000 took 0.0107645988 seconds
-Run 5 of 5 for merge_sort operation with a list size of 16000 took 0.0219638348 seconds
-Linear
+Run  1 of  5 for merge_sort operation with a list size of 1000 took 0.0080037117 seconds   
+Run  2 of  5 for merge_sort operation with a list size of 2000 took 0.0049836636 seconds   
+Run  3 of  5 for merge_sort operation with a list size of 4000 took 0.0179569721 seconds
+Run  4 of  5 for merge_sort operation with a list size of 8000 took 0.0311799049 seconds
+Run  5 of  5 for merge_sort operation with a list size of 16000 took 0.0462493896 seconds
+
+Behold the worst-case time complexity analysis!
+The ratio was 1.4833075899616144 which rounds to 1 which means that the worst-case time complexity is likely logarithmic!
 ```
 
 #### Quick Sort input:
@@ -143,12 +152,15 @@ Starting size: 1000
 Number of runs: 5
 File Path: sortingfunctions.py
 Sorting algorithm: quick_sort
-Run 1 of 5 for quick_sort operation with a list size of 1000 took 0.0004308224 seconds
-Run 2 of 5 for quick_sort operation with a list size of 2000 took 0.0007622242 seconds
-Run 3 of 5 for quick_sort operation with a list size of 4000 took 0.0014250278 seconds
-Run 4 of 5 for quick_sort operation with a list size of 8000 took 0.0030248165 seconds
-Run 5 of 5 for quick_sort operation with a list size of 16000 took 0.0064024925 seconds
-Linear
+Run  1 of  5 for quick_sort operation with a list size of 1000 took 0.0000000000 seconds   
+Run  2 of  5 for quick_sort operation with a list size of 2000 took 0.0019052029 seconds   
+Run  3 of  5 for quick_sort operation with a list size of 4000 took 0.0020380020 seconds
+Run  4 of  5 for quick_sort operation with a list size of 8000 took 0.0094642639 seconds
+Run  5 of  5 for quick_sort operation with a list size of 16000 took 0.0125412941 seconds
+
+Behold the worst-case time complexity analysis!
+The ratio was 1.3251209189842805 which rounds to 1 which means that the worst-case time complexity is 
+likely logarithmic!
 ```
 
 #### Python Sort input:
@@ -166,8 +178,11 @@ Run 2 of 5 for python_sort operation with a list size of 2000 took 0.0001194477 
 Run 3 of 5 for python_sort operation with a list size of 4000 took 0.0002787113 seconds
 Run 4 of 5 for python_sort operation with a list size of 8000 took 0.0004899502 seconds
 Run 5 of 5 for python_sort operation with a list size of 16000 took 0.0026359558 seconds
-Linear
+
+Behold the worst-case time complexity analysis!
+The ratio was 5.38004842125 which rounds to 5. This is indicative of some other growth pattern. Try again with more runs to get more details!"
 ```
+
 
 ### Data Tables and Graphs
 
